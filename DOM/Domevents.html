@@ -1,0 +1,8 @@
+<button id="btn">Click Me</button>
+<p id="text">Before Click</p>
+
+<script>
+document.getElementById("btn").addEventListener("click", () => {
+  document.getElementById("text").innerText = "After Click";
+});
+</script>

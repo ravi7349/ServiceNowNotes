@@ -1,0 +1,20 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Product Launch Page</title>
+  <script type="module">
+    import { getCurrentDate } from './dateModule.js';
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const button = document.getElementById('showDateBtn');
+      button.addEventListener('click', () => {
+        console.log(getCurrentDate());
+      });
+    });
+  </script>
+</head>
+<body>
+  <button id="showDateBtn">Show Current Date</button>
+</body>
+</html>

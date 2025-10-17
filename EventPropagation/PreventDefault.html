@@ -1,0 +1,8 @@
+<a href="https://google.com" id="mylink">Go to Google</a>
+
+<script>
+document.getElementById("mylink").addEventListener("click", (e) => {
+  e.preventDefault(); // stops link navigation
+  console.log("Default action stopped");
+});
+</script>

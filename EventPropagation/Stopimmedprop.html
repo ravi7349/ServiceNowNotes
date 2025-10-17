@@ -1,0 +1,14 @@
+<button id="btn">Click Me</button>
+
+<script>
+let btn = document.getElementById("btn");
+
+btn.addEventListener("click", (e) => {
+  console.log("First handler");
+  e.stopImmediatePropagation(); // stops other handlers
+});
+
+btn.addEventListener("click", () => {
+  console.log("Second handler"); // ❌ won't run
+});
+</script>
